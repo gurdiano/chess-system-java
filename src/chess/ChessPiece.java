@@ -16,6 +16,18 @@ public abstract class ChessPiece extends Piece{
 		return color;
 	}
 	
+	public int getMoveCount() {
+		return this.moveCount;
+	}
+	
+	public void increaseMoveCount() {
+		this.moveCount++;
+	}
+	
+	public void decreaseMoveCount() {
+		this.moveCount--;
+	}
+	
 	public ChessPosition getChessPosition() {
 		return ChessPosition.fromPosition(this.position);
 	}
